@@ -4,12 +4,14 @@
   "description": "",
   "license": "",
   "sideEffects": false,
+  "prisma": {
+    "seed": "node --require esbuild-register prisma/seed.ts"
+  },
   "scripts": {
     "build": "cross-env NODE_ENV=production remix build",
     "dev": "≈ NODE_ENV=development remix dev",
     "postinstall": "remix setup node",
-    "start": "cross-env NODE_ENV=production remix-serve build",
-    "seed": "cross-env node --require esbuild-register prisma/seed.ts"
+    "start": "cross-env NODE_ENV=production remix-serve build"
   },
   "dependencies": {
     "@prisma/client": "^3.10.0",
