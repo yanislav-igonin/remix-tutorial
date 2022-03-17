@@ -23,10 +23,10 @@ export default function Index() {
         <nav>
           <ul>
             <li>
-              <Link to="jokes">Read Jokes</Link>
+              <Link prefetch="intent" to="jokes">Read Jokes</Link>
             </li>
             <li>
-              <Link reloadDocument to="jokes.rss">Jokes RSS Feed</Link>
+              <Link prefetch="intent" reloadDocument to="jokes.rss">Jokes RSS Feed</Link>
             </li>
           </ul>
         </nav>

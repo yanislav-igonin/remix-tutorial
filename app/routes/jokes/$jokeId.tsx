@@ -98,7 +98,7 @@ export default function JokeRoute() {
     <div>
       <p>Here's your hilarious joke:</p>
       <p>{data.joke.content}</p>
-      <Link to=".">{data.joke.name} Permalink</Link>
+      <Link prefetch="intent" to=".">{data.joke.name} Permalink</Link>
       {data.isOwner ? (
         <Form method="post">
           <input
